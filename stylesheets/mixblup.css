@@ -1,0 +1,75 @@
+
+/* =========================
+   FONTS
+========================= */
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Marcellus&display=swap');
+
+.md-content h1:first-child {
+  margin-top: 0 !important;
+}
+
+.md-main__inner {
+  padding-top: 0 !important;
+}
+
+.md-typeset h1:first-child {
+  margin-top: 0 !important;
+}
+
+/* =========================
+   THEME COLORS (MASTER CONTROL)
+========================= */
+/*White = #ffffff
+#Beige = #F0EEE8
+#Light green = #AECC50
+#Dark green = #356254
+#Dark grey = #303636*/
+
+:root {
+  --md-primary-fg-color: #356254;
+  --md-primary-fg-color--light: #F0EEE8;
+  --md-primary-fg-color--dark: #356254;
+
+  --md-accent-fg-color: #AECC50;
+
+  --md-default-bg-color: #ffffff;
+  --md-default-fg-color: #303636;
+
+  --sidebar-bg: #356254;
+}
+
+/* =========================
+   HEADINGS
+========================= */
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Marcellus", serif;
+  color: #356254;
+}
+
+/* =========================
+   LINKS
+========================= */
+a {
+  color: var(--md-default-fg-color);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* =========================
+   FOOTER
+========================= */
+
+.md-footer-meta {
+  background-color: #F0EEE8;
+}
+
+.footer-custom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-inline: 24px;
+}
