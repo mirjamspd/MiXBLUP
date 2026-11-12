@@ -1,0 +1,187 @@
+
+/* =========================
+   FONTS
+========================= */
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Marcellus&display=swap');
+
+
+element.style {
+  background: transparent;
+}
+
+
+/* =========================
+   THEME COLORS (MASTER CONTROL)
+========================= */
+:root {
+  --md-primary-fg-color: #0B4A66;
+  --md-primary-fg-color--light: #0B4A66;
+  --md-primary-fg-color--dark: #0B4A66;
+
+  --md-accent-fg-color: #71CAF4;
+
+  --md-default-bg-color: #F0EEE8;
+  --md-default-fg-color: #303636;
+
+  --sidebar-bg: #0B4A66;
+}
+
+/* =========================
+   GLOBAL LAYOUT RESET
+========================= */
+html, body {
+  font-family: "Raleway", sans-serif;
+  background: #FFFFFF !important;
+  color: var(--md-default-fg-color);
+  line-height: 1.7;
+}
+
+/* kill all Material "surface cards" */
+.md-container,
+.md-main,
+.md-main__inner {
+  background: transparent !important;
+  box-shadow: none !important;
+}
+
+
+.md-content {
+  background: transparent !important;
+}
+
+
+/* =========================
+   CONTENT AREA
+========================= */
+.md-content {
+  max-width: 900px;
+  margin: 20px auto;
+  padding: 40px;
+  border-radius: 6px;
+}
+
+/* =========================
+   HEADINGS
+========================= */
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Marcellus", serif;
+  color: #0B4A66;
+}
+
+/* =========================
+   LINKS
+========================= */
+a {
+  color: var(--md-accent-fg-color);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* =========================
+   HEADER (CLEAN SINGLE LAYER)
+========================= */
+.md-header {
+  background: #F0EEE8 !important;
+  color: #0B4A66 !important;
+  box-shadow: none !important;
+  border-bottom: 1px solid rgba(48,54,54,0.15);
+}
+
+.md-header__inner {
+  background: transparent !important;
+}
+
+/* hide duplicate title label issues */
+.md-header__title {
+  display: none !important;
+}
+
+/* logo */
+.md-header__button.md-logo img {
+  max-height: 40px;
+}
+
+/* remove tabs bar completely */
+.md-tabs {
+  display: none;
+}
+
+/* =========================
+   SIDEBAR (FIXED — NO BOX LAYERS)
+========================= */
+
+.md-sidebar {
+  height: auto; /* or just remove */
+}
+
+.md-sidebar--primary {
+  background: var(--sidebar-bg) !important;
+}
+
+.md-sidebar--primary .md-sidebar__scrollwrap,
+.md-sidebar--primary .md-sidebar__inner,
+.md-sidebar--primary .md-nav {
+  background: var(--sidebar-bg) !important;
+  box-shadow: none !important;
+}
+
+/* remove ANY pseudo-layer artifacts */
+.md-sidebar--primary::before,
+.md-sidebar--primary::after {
+  display: none !important;
+}
+
+/* =========================
+   SIDEBAR TEXT
+========================= */
+.md-sidebar--primary .md-nav__link,
+.md-sidebar--primary .md-nav__title {
+  color: #F0EEE8 !important;
+}
+
+/* active item */
+.md-sidebar--primary .md-nav__link--active {
+  color: #71CAF4 !important;
+  border-left: 3px solid #71CAF4;
+  padding-left: calc(0.6rem - 3px);
+  background: rgba(113,202,244,0.10);
+}
+
+/* hover */
+.md-sidebar--primary .md-nav__link:hover {
+  background: rgba(113,202,244,0.06);
+  color: #71CAF4 !important;
+}
+
+/* =========================
+   SIDEBAR STRUCTURE (CLEAN TREE)
+========================= */
+.md-nav__list {
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+.md-nav__item > .md-nav__link {
+  padding-left: 0.6rem;
+}
+
+.md-nav__item .md-nav__item > .md-nav__link {
+  padding-left: 1.4rem;
+  font-size: 0.95em;
+}
+
+.md-nav__item .md-nav__item .md-nav__item > .md-nav__link {
+  padding-left: 2.2rem;
+  font-size: 0.92em;
+}
+
+/* =========================
+   CONTENT CLEANUP
+========================= */
+.md-content {
+  color: #303636;
+}

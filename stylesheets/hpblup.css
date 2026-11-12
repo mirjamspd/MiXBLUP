@@ -1,0 +1,96 @@
+
+/* =========================
+   FONTS
+========================= */
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Marcellus&display=swap');
+
+.md-content h1:first-child {
+  margin-top: 0 !important;
+}
+
+.md-main__inner {
+  padding-top: 0 !important;
+}
+
+.md-typeset h1:first-child {
+  margin-top: 0 !important;
+}
+
+.md-grid {
+  max-width: none;
+}
+
+.md-content__inner {
+  max-width: 95ch;
+  margin-inline: auto;
+}
+
+.md-typeset {
+  font-size: 14px;
+}
+
+@media screen and (min-width: 76.25em) {
+  .md-sidebar--primary {
+    width: 16rem;
+  }
+
+  .md-sidebar--primary .md-sidebar__inner {
+    padding-inline: 0;
+  }
+}
+
+.md-sidebar--primary .md-nav {
+  font-size: 14px;
+}
+
+/* =========================
+   THEME COLORS (MASTER CONTROL)
+========================= */
+:root {
+  --md-primary-fg-color: #0B4A66;
+  --md-primary-fg-color--light: #71CAF4;;
+  --md-primary-fg-color--dark: #0B4A66;
+
+  --md-accent-fg-color: #71CAF4;
+
+  --md-default-bg-color: #ffffff;
+  --md-default-fg-color: #303636;
+
+  --sidebar-bg: #0B4A66;
+}
+
+/* =========================
+   HEADINGS
+========================= */
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Marcellus", serif;
+  color: #0B4A66;
+}
+
+/* =========================
+   LINKS
+========================= */
+a {
+  color: var(--md-default-fg-color);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* =========================
+   FOOTER
+========================= */
+
+.md-footer-meta {
+  background-color: #f5f0e6;
+}
+
+.footer-custom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-inline: 24px;
+}
